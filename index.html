@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>Dale Website</title>
+    <style>
+        body {
+            background: rgb(177, 236, 241);
+            color: rgb(20, 20, 20);
+            padding: 10px;
+            font-family: arial;
+        }
+        #all-contents {
+          max-width: 800px;
+            margin: auto;
+        }
+     
+        /* navigation menu */
+        nav {
+            background: rgb(116, 255, 236);
+           margin: 0 auto;
+           margin-bottom: 20px;
+            display: flex;
+            padding: 10px;
+        }
+        h1 {
+            display: flex;
+            align-items: center;
+            color: white;
+            flex: 1;
+            margin: 0;
+        }
+        #nav-ul {
+            list-style-image: none;
+        }
+        .nav-li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+     
+        /* main container area beneath menu */
+        main {
+            background: rgb(206, 238, 255);
+            display: flex;
+        }
+        .sidebar {
+            margin-right: 25px;
+            padding: 10px;
+        }
+        .sidebar-img {
+            width: 200px;
+        }
+        .content {
+            flex: 1;
+            padding: 15px;
+        }
+        #interests {
+            border: 4px silver ridge;
+            padding: 8px;
+        }
+        h2, h3 {
+            margin: 0px;
+        }
+     </style>
+    </head>
+    
+    <body>
+     <!-- Visible HTML elements GO HERE  -->
+     <div id="all-contents">
+        <nav id="nav-ul">
+            <h1>
+                Dale's Website
+            </h1>
+            <ul id="nav-ul">
+                <li class="nav-li">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-li">
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <!-- Sidebar Section -->
+            <div class="sidebar">
+                <img class="sidebar-img" src="data:image/png;base64,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">
+            </div>
+            <!-- Content section -->
+            <div class="content">
+                <h2>Dale Buras</h2>
+                <p>Student at Covington High</p>
+                <!-- Interests section -->
+                <div id="interests">
+                    <h3>Interests</h3>
+                    <ul>
+                        <li>Videogames</li>
+                        <li>Movies</li>
+                        <li>History</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    </body>
+</html>
